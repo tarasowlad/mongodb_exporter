@@ -15,7 +15,7 @@ jobs:
     - name: git clone
       run: git clone https://github.com/percona/mongodb_exporter.git .
     - name: build docker
-      run: docker build -t mongodb_ex1:${{ github.sha }}
+      run: docker build -t mongodb_ex1:${{ github.sha }} .
     - name: test
       run: docker images 
     #     - name: Configure AWS credentials
