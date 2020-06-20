@@ -12,5 +12,7 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: docker
+      - name: docker images
         run: docker images
+      - name: docker ps
+        run: docker ps -a
