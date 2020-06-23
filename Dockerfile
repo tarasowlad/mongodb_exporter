@@ -8,7 +8,7 @@ COPY . .
 
 RUN make build
 
-FROM quay.io/prometheus/busybox:latest
+FROM prom/busybox:latest
 
 LABEL maintainer="Alexey Palazhchenko <alexey.palazhchenko@percona.com>"
 
